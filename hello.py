@@ -16,4 +16,4 @@ def contexto_requisicao():
     remote_ip = request.remote_addr
     host = request.host
 
-    return '<h1>Avaliação contínua: Aula 030</h1><h2>Seu navegador é: {{ user_agent }}</h2><h2>O IP do computador remoto é: {{ remote_ip }}</h2><h2>O host da aplicação é: {{ host }}</h2><a href="/">Voltar</a>'
+    return f'<h1>Avaliação contínua: Aula 030</h1><h2>Seu navegador é: {user_agent}</h2><h2>O IP do computador remoto é: {remote_ip}</h2><h2>O host da aplicação é: {host}</h2><a href="/">Voltar</a>'
