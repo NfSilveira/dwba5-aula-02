@@ -6,7 +6,13 @@ app = Flask(__name__)
 @app.route('/')
 def index():
 
-    return '<h1>Avaliação contínua: Aula 030</h1><ul><li><a href="/">Home</a></li><li><a href="">Identificação</a></li><li><a href="/contextorequisicao">Contexto da requisição</a></li></ul>'
+    return '<h1>Avaliação contínua: Aula 030</h1><ul><li><a href="/">Home</a></li><li><a href="/user/Nicolas%20Freitas%20Silveira/PT3019144/IFSP-PTB">Identificação</a></li><li><a href="/contextorequisicao">Contexto da requisição</a></li></ul>'
+
+
+@app.route('/user/<nome>/<prontuario>/<instituicao>')
+def identificacao(nome, prontuario, instituicao):
+
+    return f'<h1>Avaliação contínua: Aula 030</h1><h2>Aluno: {nome}</h2><h2>Prontuário: {prontuario}</h2><h2>Instituição: {instituicao}</h2><a href="/">Voltar</a>'
 
 
 @app.route('/contextorequisicao')
