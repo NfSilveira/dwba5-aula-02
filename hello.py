@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
 
-    return '<h1>Avaliação contínua: Aula 030</h1><table><tr><td><a href="/">Home</a></td></tr><tr><td><b><a href="">Identificação</a></b></td><td><a href="/contextorequisicao">Contexto da requisição</a></td></tr></table>'
+    return '<h1>Avaliação contínua: Aula 030</h1><ul><li><a href="/">Home</a></li><li><a href="">Identificação</a></li><li><a href="/contextorequisicao">Contexto da requisição</a></li></ul>'
 
 
 @app.route('/contextorequisicao')
